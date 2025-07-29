@@ -65,11 +65,9 @@ const Home = () => {
 
     </Container>
   </section>
-  
-
   {/*========= featured tour section start ========= */}
   <section>
-    <container>
+    <Container>
       <Row>
         <Col lg='12' className="mb-5">
          <Subtitle subtitle={'Explore'}/>
@@ -77,7 +75,7 @@ const Home = () => {
         </Col>
         <FeaturedTourList/>
       </Row>
-    </container>
+    </Container>
   </section>
  {/*========= featured tour section end  ========= */}
 
