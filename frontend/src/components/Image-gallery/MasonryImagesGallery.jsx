@@ -1,5 +1,5 @@
 import React from 'react'
-import galleryimages from './galleryimages'
+import galleryImages from './galleryimages'
 
 import Masonry, { ResponsiveMasonry  } from 'react-responsive-masonry'
 
