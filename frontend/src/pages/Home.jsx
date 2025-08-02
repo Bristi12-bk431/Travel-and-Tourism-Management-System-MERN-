@@ -13,6 +13,8 @@ import SearchBar from '../shared/SearchBar';
 import ServiceList from '../services/ServiceList';
 import FeaturedTourList from "../components/Featured-tours/FeaturedTourList";
 import MasonryImagesGallery from '../components/Image-gallery/MasonryImagesGallery';
+import Testimonials from '../components/Testimonial/Testimonials';
+import Newsletter from '../shared/Newsletter';
 
 
 
@@ -90,9 +92,9 @@ const Home = () => {
          <Subtitle subtitle={'Experience'}/>
 
          <h2>With our all experience <br /> we will serve you </h2>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         <p>by offering the best travel solutions tailored to your needs.From planning perfect itineraries to offering 24/7 support, we take care of every detail. 
             <br />
-            quaerat fugiat reprehenderit porro iusto quibusdam deserunt in unde .
+            Whether it’s a solo adventure, family vacation, or group tour, our expert team ensures a safe, smooth, and unforgettable journey every time
          </p>
        </div>
 
@@ -139,6 +141,25 @@ const Home = () => {
   </Container>
  </section>
  {/*===========gallery section end ==============*/}
+
+ {/*===========testimonial section start ========*/}
+ <section>
+  <Container>
+    <Row>
+      <Col lg='12'>
+       <Subtitle subtitle={'Fans Love'}/>
+       <h2 className="testimonial__title">
+        What our fans say about us</h2>
+      </Col>
+      <Col lg='12'>
+         <Testimonials/>
+      </Col>
+    </Row>
+
+  </Container>
+ </section>
+ {/*===========testimonial section end ========*/}
+ <Newsletter/>
   </>
 
 };

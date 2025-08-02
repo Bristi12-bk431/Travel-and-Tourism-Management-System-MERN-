@@ -1,5 +1,5 @@
 import React from 'react'
-import galleryImages from './galleryImages'
+import galleryImages from './galleryimages'
 
 import Masonry, { ResponsiveMasonry  } from 'react-responsive-masonry'
 
@@ -10,7 +10,8 @@ const MasonryImagesGallery = () => {
             {
                 galleryImages.map((item, index)=>(
                     <img 
-                      src= {item}
+                       className="masonry__img"
+                       src= {item}
                        key={index} 
                        alt="" 
                        style={{width : "100%", display: "block", borderRadius : "10px"}} 
