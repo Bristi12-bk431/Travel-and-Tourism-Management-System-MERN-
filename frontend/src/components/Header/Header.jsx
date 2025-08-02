@@ -21,27 +21,29 @@ const nav_links = [
 ]
 
 const Header = () => {
+  const headerRef = useRef(null);
 
-const headerRef = useRef(null) 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (
+        document.body.scrollTop > 80 ||
+        document.documentElement.scrollTop > 80
+      ) {
+        headerRef.current.classList.add('sticky__header');
+      } else {
+        headerRef.current.classList.remove('sticky__header');
+      }
+    };
 
-const stickyHeaderFunc = ()=>{
-  window.addEventListener('scroll', ()=>{
-    if(document.body.scrollTop >80 || document.documentElement.scrollTop >80){
-      headerRef.current.classList.add('.sticky__header')
-    }else{
-      headerRef.current.classList.remove('.sticky__header')
-    }
+    window.addEventListener('scroll', handleScroll);
 
-  })
-}
+    // Clean up
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); // Empty deps: only runs once when component mounts
 
-useEffect(()=>{
-  stickyHeaderFunc()
-
-  return window.removeEventListener('scroll', stickyHeaderFunc)
-})
-
-  return <header classname = "header" ref={headerRef}>
+  return <header className = "header" ref={headerRef}>
     <Container>
       <Row>
         <div className="nav_wrapper d-flex align-items-center justify-content-between">
@@ -59,8 +61,8 @@ useEffect(()=>{
               nav_links.map((item,index)=>(
                 <li className="nav__item" key={index}>
                   <NavLink to={item.path} 
-                  className={navClass=>
-                    navClass.isActive? 'active__link':""
+                  className={({ isActive }) =>
+                        isActive ? 'active__link' : ''
                   }
                   >
                     {item.display}
