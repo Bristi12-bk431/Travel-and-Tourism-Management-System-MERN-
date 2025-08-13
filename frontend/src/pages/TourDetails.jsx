@@ -1,6 +1,4 @@
-
-
-import React from 'react'
+import React,{useRef, useState} from 'react'
 import '../styles/tour-details.css'
 import{ Container, Row, Col, Form,ListGroup } from 'reactstrap'
 import { useParams } from 'react-router-dom'
@@ -9,7 +7,9 @@ import calculateAvgRating from '../utils/avgRating'
 import avatar from '../assets/images/avatar.jpg'
 
 const TourDetails = () => {
-  const {id}=useParams()
+  const {id}=useParams();
+  const reviewMsgRef = useRef('')
+  const [tourRating, setTourRating]=useState(null);
 
   //this is an static data we will call in our API and load our data from database
   const tour=tourData.find(tour=> tour.id===id)
@@ -21,8 +21,17 @@ const TourDetails = () => {
 
 
   //format date 
-  const options = {day:'numeric',month:'long',year:'numeric'}
+  const options = {day:'numeric',month:'long',year:'numeric'};
 
+  // submit request to the server 
+  const submitHandler = e => {
+    e.preventDefault();
+    const reviewText = reviewMsgRef.current.value;
+
+   alert(`${reviewText}, ${tourRating}`);
+
+    // later wil call our api
+  };
   return <>
   
   <section>
@@ -55,7 +64,9 @@ const TourDetails = () => {
               <div className="tour__extra-details">
                 <span><i class="ri-map-pin-2-line"></i> {city}</span>
                 <span><i class="ri-money-dollar-circle-line"></i> ${price} /per person</span>
-                <span><i class="ri-group-line"></i> {maxGroupSize}</span>
+                <span> <i class="ri-map-pin-time-line"></i> ${distance} k/m</span>
+                <span><i class="ri-group-line"></i> {maxGroupSize} people
+                </span>
               </div>
               <h5>Description</h5>
               <p>{desc}</p>
@@ -67,17 +78,19 @@ const TourDetails = () => {
               Reviews ({reviews?.length} reviews)
             </h4>
 
-            <Form>
+            <Form onSubmit={submitHandler}>
               <div className='d-flex align-items-center gap-3 mb-4 rating__group'>
-                <span>1 <i class="ri-star-s-fill"></i></span>
-                <span>2 <i class="ri-star-s-fill"></i></span>
-                <span>3 <i class="ri-star-s-fill"></i></span>
-                <span>4 <i class="ri-star-s-fill"></i></span>
-                <span>5 <i class="ri-star-s-fill"></i></span>
+                <span onClick={()=> setTourRating(1)}>1 <i class="ri-star-s-fill"></i></span>
+                <span onClick={()=> setTourRating(2)}>2 <i class="ri-star-s-fill"></i></span>
+                <span onClick={()=> setTourRating(3)}>3 <i class="ri-star-s-fill"></i></span>
+                <span onClick={()=> setTourRating(4)}>4 <i class="ri-star-s-fill"></i></span>
+                <span onClick={()=> setTourRating(5)}>5 <i class="ri-star-s-fill"></i></span>
               </div>
 
               <div className="review__input">
-                <input type="text" placeholder=" Share your thoughts" />
+                <input type="text" ref={reviewMsgRef} placeholder=" Share your thoughts" 
+                required
+                />
                 <button className="btn primary__btn text-white" type='submit'>
                   Submit
                 </button>
