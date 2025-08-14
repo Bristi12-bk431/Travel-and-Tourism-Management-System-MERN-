@@ -15,7 +15,14 @@ const tours = [
     address: " Somewhere",
     price: 999,
     maxGroupSize: 10,
+    duration: "4N/5D",
     desc: "Step onto the historic Westminster Bridge, a stunning architectural landmark spanning the River Thames in the heart of London. With picturesque views of the Houses of Parliament and Big Ben, this iconic bridge is a favorite for sightseeing, photography, and romantic strolls. Whether you're catching a classic London sunset or enjoying the bustling atmosphere, Westminster Bridge offers an unforgettable experience blending history, beauty, and city life.",
+    highlights: [
+      "Iconic views of Big Ben & Houses of Parliament",
+      "Perfect for photography & romantic strolls",
+      "Close to top London attractions",
+      "Beautiful at sunset & night",
+    ],
     reviews: [
       {
         name: "jhon doe",
@@ -38,7 +45,14 @@ const tours = [
     address: " Somewhere",
     price: 999,
     maxGroupSize: 8,
+    duration: "5N/6D",
     desc: "Bali, the Island of the Gods, is a tropical paradise in Indonesia known for its breathtaking beaches, lush rice terraces, vibrant culture, and spiritual charm. From the serene temples of Uluwatu to the energetic nightlife of Seminyak, Bali offers a perfect blend of relaxation and adventure. Whether you're exploring ancient Hindu temples, surfing world-class waves, or indulging in Balinese cuisine and spa retreats, Bali promises an unforgettable escape for every type of traveler.",
+    highlights: [
+      "Stunning beaches & crystal-clear waters",
+      "Explore ancient Hindu temples",
+      "Vibrant nightlife in Seminyak",
+      "Lush rice terraces & cultural shows",
+    ],
     reviews: [
       {
         name: "jhon doe",
@@ -57,7 +71,14 @@ const tours = [
     address: " Somewhere",
     price: 999,
     maxGroupSize: 8,
+    duration: "3N/4D",
     desc: "Escape to the serene Snowy Mountains of Thailand, a breathtaking highland retreat where cool mists drift over rolling hills and lush green valleys. Nestled in the northern region, this hidden gem offers panoramic mountain views, peaceful temples, and encounters with traditional hill tribe cultures. Perfect for nature lovers and photographers, the area is ideal for hiking, sunrise viewpoints, and sipping warm tea with the clouds at your feet — a side of Thailand most travelers never see.",
+    highlights: [
+      "Cool misty mornings & scenic views",
+      "Peaceful mountain temples",
+      "Meet traditional hill tribe communities",
+      "Ideal for hiking & photography",
+    ],
     reviews: [
       {
         name: "jhon doe",
@@ -76,7 +97,14 @@ const tours = [
     address: " Somewhere",
     price: 999,
     maxGroupSize: 8,
+    duration: "2N/3D",
     desc: "Witness the magic of a Beautiful Sunrise in Thailand, where the first light of day paints the sky in shades of gold, pink, and orange. Whether you're standing on a tranquil beach, overlooking misty mountains, or floating in a long-tail boat on calm waters, Thailand's sunrise moments are pure serenity. This unforgettable experience blends nature’s beauty with peace and stillness — a perfect start to your day in paradise.",
+    highlights: [
+      "Golden & pink morning skies",
+      "Perfect for peaceful meditation",
+      "Best viewed from beaches & mountains",
+      "Serene start to your day in paradise",
+    ],
     reviews: [
       {
         name: "jhon doe",
@@ -95,7 +123,14 @@ const tours = [
     address: " Somewhere",
     price: 999,
     maxGroupSize: 8,
+    duration: "4N/5D",
     desc: "Nusa Penida, a stunning island off the coast of Bali, is a hidden gem known for its dramatic cliffs, crystal-clear waters, and untouched natural beauty. Explore iconic spots like Kelingking Beach, with its T-Rex-shaped cliff, the breathtaking natural pool at Angel’s Billabong, and the turquoise waters of Broken Beach. Ideal for adventurers and nature lovers, Nusa Penida offers snorkeling with manta rays, scenic hikes, and postcard-perfect views — a must-visit for anyone seeking Bali's wilder, more rugged side.",
+    highlights: [
+      "T-Rex-shaped cliff at Kelingking Beach",
+      "Swim in Angel’s Billabong",
+      "Turquoise waters at Broken Beach",
+      "Snorkeling with manta rays",
+    ],
     reviews: [
       {
         name: "jhon doe",
@@ -114,7 +149,14 @@ const tours = [
     price: 999,
     address: " Somewhere",
     maxGroupSize: 8,
+    duration: "6N/7D",
     desc: "Experience the breathtaking beauty of Cherry Blossom Spring in Japan, a magical season when delicate sakura flowers blanket parks, temples, and city streets in soft shades of pink and white. From the vibrant festivals of Tokyo and Kyoto to serene strolls under blooming trees along rivers and castles, cherry blossom season is a cultural celebration of nature, renewal, and fleeting beauty. Don’t miss this iconic moment — a picture-perfect time to explore Japan at its most enchanting.",
+    highlights: [
+      "Stroll under blooming sakura trees",
+      "Join vibrant cherry blossom festivals",
+      "Perfect for photography & picnics",
+      "Symbol of renewal & fleeting beauty",
+    ],
     reviews: [
       {
         name: "jhon doe",
@@ -133,7 +175,14 @@ const tours = [
     price: 999,
     address: " Somewhere",
     maxGroupSize: 8,
+    duration: "5N/6D",
     desc: "Tucked away in the majestic Lofoten Islands of Norway, Holmen Lofoten offers a one-of-a-kind escape into Arctic beauty and serene luxury. Surrounded by rugged mountains, deep fjords, and the northern sea, this tranquil retreat is perfect for experiencing Norway's natural wonders — from the Midnight Sun to the Northern Lights. With a focus on sustainable living, local cuisine, and personal connection to the land and sea, Holmen Lofoten is where raw nature meets refined comfort.",
+    highlights: [
+      "Witness the Midnight Sun & Northern Lights",
+      "Breathtaking fjords & mountain views",
+      "Fresh local seafood & Arctic cuisine",
+      "Perfect for kayaking & hiking",
+    ],
     reviews: [],
     avgRating: 4.5,
     photo: tourImg07,
@@ -147,7 +196,14 @@ const tours = [
     price: 999,
     address: " Somewhere",
     maxGroupSize: 8,
+    duration: "3N/4D",
     desc: "Escape to the serene Snowy Mountains of Thailand, a breathtaking highland retreat where cool mists drift over rolling hills and lush green valleys. Nestled in the northern region, this hidden gem offers panoramic mountain views, peaceful temples, and encounters with traditional hill tribe cultures. Perfect for nature lovers and photographers, the area is ideal for hiking, sunrise viewpoints, and sipping warm tea with the clouds at your feet — a side of Thailand most travelers never see.",
+    highlights: [
+      "Cool misty mornings & scenic views",
+      "Peaceful mountain temples",
+      "Meet traditional hill tribe communities",
+      "Ideal for hiking & photography",
+    ],
     reviews: [],
     avgRating: 4.5,
     photo: tourImg03,
