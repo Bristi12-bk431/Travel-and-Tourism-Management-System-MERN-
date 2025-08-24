@@ -98,7 +98,8 @@ const TourDetails = () => {
                       <i className="ri-map-pin-2-line"></i> {city}
                     </span>
                     <span>
-                      <i className="ri-wallet-3-line"></i> ₹{price} / per person
+                      <i className="ri-wallet-3-line"></i> ₹
+                      {price.toLocaleString("en-IN")} / per person
                     </span>
                     <span>
                       <i className="ri-map-pin-time-line"></i> {distance} k/m

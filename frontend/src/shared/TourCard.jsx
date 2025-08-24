@@ -40,7 +40,7 @@ const TourCard = ({ tour }) => {
             justify-content-between mt-3"
           >
             <h5>
-              ₹{price} <span> /per person</span>
+              ₹{price.toLocaleString()} <span> /per person</span>
             </h5>
 
             <button className="btn booking__btn">
