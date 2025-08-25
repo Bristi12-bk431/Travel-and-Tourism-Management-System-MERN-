@@ -33,7 +33,7 @@ const TourDetails = () => {
     maxGroupSize,
     duration,
     highlights,
-  } = tour;
+  } = tour ;
 
   const { totalRating, avgRating } = calculateAvgRating(reviews);
 
@@ -99,7 +99,9 @@ const TourDetails = () => {
                     </span>
                     <span>
                       <i className="ri-wallet-3-line"></i> ₹
-                      {price.toLocaleString("en-IN")} / per person
+                      {typeof price === "number" 
+                        ? price.toLocaleString("en-IN") 
+                        : "N/A"} / per person
                     </span>
                     <span>
                       <i className="ri-map-pin-time-line"></i> {distance} k/m

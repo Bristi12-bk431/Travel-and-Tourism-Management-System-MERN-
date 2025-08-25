@@ -4,7 +4,7 @@ import { Form, FormGroup, ListGroup, ListGroupItem, Button } from "reactstrap";
 import { useNavigate } from "react-router-dom";
 
 const Booking = ({ tour, avgRating }) => {
-  const { price, reviews } = tour;
+  const { price = 0, reviews = [] } = tour || {};
   const navigate = useNavigate();
 
   const [credentials, setCredentials] = useState({
@@ -35,7 +35,7 @@ const Booking = ({ tour, avgRating }) => {
     <div className="booking">
       <div className="booking__top d-flex align-items-center justify-content-between">
         <h3>
-          ₹{price.toLocaleString("en-IN")} <span>/per person</span>
+          ₹{price?.toLocaleString("en-IN")} <span>/per person</span>
         </h3>
 
         <span className="tour__rating d-flex align-items-center ">
