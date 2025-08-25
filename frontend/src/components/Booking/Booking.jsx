@@ -9,7 +9,7 @@ const Booking = ({ tour, avgRating }) => {
   const { price, reviews, title } = tour || {};
   const navigate = useNavigate();
 
-  const {user} = useContext(AuthContext)
+  const { user } = useContext(AuthContext);
 
   const [booking, setBooking] = useState({
     userId: user && user._id,
@@ -34,30 +34,29 @@ const Booking = ({ tour, avgRating }) => {
     e.preventDefault();
 
     try {
-        if(!user || user===undefined || user===null){
-          return alert('Please sign in')
-        }
+      if (!user || user === undefined || user === null) {
+        return alert("Please sign in");
+      }
 
-          const res = await fetch(`${BASE_URL}/booking`,{
-            method:'post',
-            headers:{
-              'content-type':'application/json'
-            },
-            credentials:'include',
-            body:JSON.stringify(booking)
-          })
+      const res = await fetch(`${BASE_URL}/booking`, {
+        method: "post",
+        headers: {
+          "content-type": "application/json",
+        },
+        credentials: "include",
+        body: JSON.stringify(booking),
+      });
 
-          const result = await res.json()
+      const result = await res.json();
 
-          if(!res.ok) {
-            return alert(result.message)
-          }
-          navigate("/thank-you");
-
+      if (!res.ok) {
+        return alert(result.message);
+      }
+      navigate("/thank-you");
     } catch (err) {
       alert(err.message);
     }
-   };
+  };
 
   return (
     <div className="booking">
@@ -67,7 +66,7 @@ const Booking = ({ tour, avgRating }) => {
         </h3>
 
         <span className="tour__rating d-flex align-items-center ">
-          <i class="ri-star-fill"></i>
+          <i className="ri-star-fill"></i>
           {avgRating === 0 ? null : avgRating} ({reviews?.length})
         </span>
       </div>
@@ -119,10 +118,10 @@ const Booking = ({ tour, avgRating }) => {
         <ListGroup>
           <ListGroupItem className="border-0 px-0">
             <h5 className="d-flex align-items-center gap-1">
-              ₹{price.toLocaleString("en-IN")} <i class="ri-close-line"></i> 1
-              person
+              ₹{price ? price.toLocaleString("en-IN") : "0"}{" "}
+              <i className="ri-close-line"></i> 1 person
             </h5>
-            <span> ₹{price.toLocaleString("en-IN")}</span>
+            <span> ₹{price ? price.toLocaleString("en-IN") : "0"}</span>
           </ListGroupItem>
           <ListGroupItem className="border-0 px-0">
             <h5>Service charge</h5>
@@ -130,7 +129,10 @@ const Booking = ({ tour, avgRating }) => {
           </ListGroupItem>
           <ListGroupItem className="border-0 px-0 total">
             <h5>Total</h5>
-            <span> ₹{totalAmount.toLocaleString("en-IN")}</span>
+            <span>
+              {" "}
+              ₹{totalAmount ? totalAmount.toLocaleString("en-IN") : "0"}
+            </span>
           </ListGroupItem>
         </ListGroup>
 
