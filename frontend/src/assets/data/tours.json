@@ -155,7 +155,7 @@
       "Ideal for hiking & photography"
     ],
     "reviews": [],
-    "photo": "/tour-images/tour-img03.jpg",
+    "photo": "/tour-images/tour-img14.jpg",
     "featured": true
   },
   {
@@ -175,7 +175,7 @@
     ],
     "reviews": [],
 
-    "photo": "/tour-images/tour-img08.jpg",
+    "photo": "/tour-images/tour-img15.jpg",
     "featured": false
   },
   {
@@ -195,7 +195,121 @@
     ],
     "reviews": [],
 
+    "photo": "/tour-images/tour-img16.jpg",
+    "featured": false
+  },
+  {
+    "title": "Goa Beaches",
+    "city": "Goa",
+    "address": "Goa, India",
+    "distance": 700,
+    "price": 30000,
+    "maxGroupSize": 12,
+    "duration": "4N/5D",
+    "desc": "Goa is India’s ultimate beach destination, famous for its golden sands, nightlife, water sports, and Portuguese heritage. From peaceful South Goa to lively North Goa, it has something for every traveler.",
+    "highlights": [
+      "Baga & Anjuna Beach",
+      "Water sports & nightlife",
+      "Portuguese churches & forts",
+      "Goan seafood & beach shacks"
+    ],
+    "reviews": [],
+    "photo": "/tour-images/tour-img08.jpg",
+    "featured": true
+  },
+  {
+    "title": "Taj Mahal, Agra",
+    "city": "Agra",
+    "address": "Uttar Pradesh, India",
+    "distance": 200,
+    "price": 22000,
+    "maxGroupSize": 8,
+    "duration": "2N/3D",
+    "desc": "The Taj Mahal, a UNESCO World Heritage Site, is one of the most iconic monuments in the world. Built by Mughal emperor Shah Jahan, it symbolizes eternal love with its white marble beauty and intricate carvings.",
+    "highlights": [
+      "World Wonder & UNESCO Site",
+      "Magnificent white marble design",
+      "Romantic sunrise & sunset views",
+      "Mughal garden complex"
+    ],
+    "reviews": [],
     "photo": "/tour-images/tour-img09.jpg",
+    "featured": true
+  },
+  {
+    "title": "Golden Temple, Amritsar",
+    "city": "Amritsar",
+    "address": "Punjab, India",
+    "distance": 300,
+    "price": 18500,
+    "maxGroupSize": 8,
+    "duration": "2N/3D",
+    "desc": "The Golden Temple, also known as Harmandir Sahib, is the holiest shrine of Sikhism. Surrounded by a sacred pool and glowing with golden architecture, it offers peace, devotion, and history in the heart of Amritsar.",
+    "highlights": [
+      "Stunning golden architecture",
+      "Holy Amrit Sarovar pool",
+      "Langar – community kitchen serving free meals",
+      "Spiritual and cultural atmosphere"
+    ],
+    "reviews": [],
+    "photo": "/tour-images/tour-img10.jpg",
+    "featured": true
+  },
+  {
+    "title": "Jaipur – The Pink City",
+    "city": "Jaipur",
+    "address": "Rajasthan, India",
+    "distance": 450,
+    "price": 28000,
+    "maxGroupSize": 10,
+    "duration": "3N/4D",
+    "desc": "Jaipur, the capital of Rajasthan, is known for its royal palaces, forts, and vibrant bazaars. The Pink City offers a blend of history, culture, and colorful traditions in its architecture and lifestyle.",
+    "highlights": [
+      "Amber Fort & City Palace",
+      "Hawa Mahal – Palace of Winds",
+      "Traditional Rajasthani cuisine",
+      "Shopping at Johari & Bapu Bazaar"
+    ],
+    "reviews": [],
+    "photo": "/tour-images/tour-img11.jpg",
+    "featured": true
+  },
+  {
+    "title": "Kerala Backwaters",
+    "city": "Alleppey",
+    "address": "Kerala, India",
+    "distance": 600,
+    "price": 34000,
+    "maxGroupSize": 6,
+    "duration": "4N/5D",
+    "desc": "Kerala’s backwaters offer a tranquil experience with scenic houseboat cruises through palm-lined lagoons and canals. It’s the perfect blend of relaxation, natural beauty, and traditional Kerala culture.",
+    "highlights": [
+      "Houseboat stay & cruise",
+      "Lush green coconut groves",
+      "Kerala-style cuisine",
+      "Birdwatching & village life"
+    ],
+    "reviews": [],
+    "photo": "/tour-images/tour-img12.jpg",
+    "featured": true
+  },
+  {
+    "title": "Varanasi – Spiritual City",
+    "city": "Varanasi",
+    "address": "Uttar Pradesh, India",
+    "distance": 350,
+    "price": 25000,
+    "maxGroupSize": 8,
+    "duration": "3N/4D",
+    "desc": "Varanasi, one of the world’s oldest living cities, is a spiritual hub on the banks of the River Ganges. Known for its ghats, evening aarti, and rich traditions, it offers a mystical experience of Indian culture.",
+    "highlights": [
+      "Evening Ganga Aarti at Dashashwamedh Ghat",
+      "Boat ride on River Ganges",
+      "Kashi Vishwanath Temple",
+      "Ancient cultural heritage"
+    ],
+    "reviews": [],
+    "photo": "/tour-images/tour-img13.jpg",
     "featured": false
   }
 ]

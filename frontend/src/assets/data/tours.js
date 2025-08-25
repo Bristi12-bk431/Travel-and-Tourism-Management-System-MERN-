@@ -5,6 +5,15 @@ import tourImg04 from "../images/tour-img04.jpg";
 import tourImg05 from "../images/tour-img05.jpg";
 import tourImg06 from "../images/tour-img06.jpg";
 import tourImg07 from "../images/tour-img07.jpg";
+// import tourImg08 from "../images/tour-img08.jpg";
+// import tourImg09 from "../images/tour-img09.jpg";
+// import tourImg10 from "../images/tour-img10.jpg";
+// import tourImg11 from "../images/tour-img11.jpg";
+// import tourImg12 from "../images/tour-img12.jpg";
+// import tourImg13 from "../images/tour-img13.jpg";
+import tourImg14 from "../images/tour-img14.jpg";
+// import tourImg15 from "../images/tour-img15.jpg";
+// import tourImg16 from "../images/tour-img16.jpg";
 
 const tours = [
   {
@@ -206,7 +215,7 @@ const tours = [
     ],
     reviews: [],
     avgRating: 4.5,
-    photo: tourImg03,
+    photo: tourImg14,
     featured: false,
   },
 ];
