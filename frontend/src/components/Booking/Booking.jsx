@@ -39,15 +39,23 @@ const Booking = ({ tour, avgRating }) => {
       }
 
       const res = await fetch(`${BASE_URL}/booking`, {
-        method: "post",
+        method: "POST",
         headers: {
-          "content-type": "application/json",
+          "Content-Type": "application/json",
         },
         credentials: "include",
         body: JSON.stringify(booking),
       });
 
-      const result = await res.json();
+      const text = await res.text();
+      let result;
+      try {
+        result = JSON.parse(text);
+      } catch {
+        console.error("Server returned non-JSON response:", text);
+        alert("Booking failed. Check console.");
+        return;
+      }
 
       if (!res.ok) {
         return alert(result.message);

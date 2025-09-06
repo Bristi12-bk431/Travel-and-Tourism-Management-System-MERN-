@@ -1,47 +1,49 @@
 import jwt from "jsonwebtoken";
 
-const verifyToken = (req, res, next) => {
+export const verifyToken = (req, res, next) => {
   const token = req.cookies.accessToken;
+  if (!token)
+    return res.status(401).json({ success: false, message: "Not authorized" });
 
-  if (!token) {
-    return res
-      .status(401)
-      .json({ success: false, message: "You're not authorize" });
-  }
-
-  // if token is exist then verify the token
   jwt.verify(token, process.env.JWT_SECRET_KEY, (err, user) => {
-    if (err) {
-      return res
-        .status(401)
-        .json({ success: false, message: "token is invalid" });
-    }
-
+    if (err)
+      return res.status(401).json({ success: false, message: "Invalid token" });
     req.user = user;
-    next(); // don't forget to call next
+    next();
   });
 };
 
 export const verifyUser = (req, res, next) => {
-  verifyToken(req, res, next, () => {
-    if (req.user.id === req.params.id || req.user.role === "admin") {
+  verifyToken(req, res, () => {
+    if (
+      req.user.role === "admin" ||
+      !req.params.id ||
+      req.user.id === req.params.id
+    ) {
       next();
     } else {
-      return res
-        .status(401)
-        .json({ success: false, message: "You're not authenticated" });
+      res.status(401).json({ success: false, message: "Not authenticated" });
     }
   });
 };
 
 export const verifyAdmin = (req, res, next) => {
-  verifyToken(req, res, next, () => {
+  verifyToken(req, res, () => {
     if (req.user.role === "admin") {
       next();
     } else {
-      return res
-        .status(401)
-        .json({ success: false, message: "You're not authorize" });
+      res.status(401).json({ success: false, message: "Not authorized" });
+    }
+  });
+};
+
+export const verifyUserLoggedIn = (req, res, next) => {
+  verifyToken(req, res, () => {
+    if (req.user) {
+      // any logged-in user
+      next();
+    } else {
+      res.status(401).json({ success: false, message: "Not authenticated" });
     }
   });
 };

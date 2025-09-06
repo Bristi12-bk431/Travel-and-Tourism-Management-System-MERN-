@@ -24,14 +24,10 @@ const bookingSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
-    ticketPrice: { type: String, required: true },
+
     bookAt: {
       type: Date,
       required: true,
-    },
-    isPaid: {
-      type: Boolean,
-      default: true,
     },
   },
   { timestamps: true }
