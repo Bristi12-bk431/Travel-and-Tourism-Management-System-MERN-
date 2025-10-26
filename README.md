@@ -100,36 +100,6 @@ npm start
 
 Then visit -> http://localhost:3000
 
-### API ENDPOINTS  
-
-#### AUTH ROUTES
-POST /api/v1/auth/register → Register a new user
-POST /api/v1/auth/login → Login user
-
-#### TOUR ROUTES
-POST /api/v1/tours → Create a tour (Admin only)
-PUT /api/v1/tours/:id → Update tour (Admin only)
-DELETE /api/v1/tours/:id → Delete tour (Admin only)
-GET /api/v1/tours → Get all tours
-GET /api/v1/tours/:id → Get single tour
-GET /api/v1/tours/search/getTourBySearch → Search tours by city
-GET /api/v1/tours/search/getFeaturedTours → Get featured tours
-GET /api/v1/tours/search/getTourCount → Get total number of tours
-
-#### USER ROUTES
-GET /api/v1/users/:id → Get single user (User/Admin)
-PUT /api/v1/users/:id → Update user (User/Admin)
-DELETE /api/v1/users/:id → Delete user (User/Admin)
-GET /api/v1/users → Get all users (Admin only)
-
-#### BOOKING ROUTES
-POST /api/v1/booking → Create booking (User only)
-GET /api/v1/booking/:id → Get single booking (User only)
-GET /api/v1/booking → Get all bookings (Admin only)
-
-#### REVIEW ROUTES
-POST /api/v1/review/:tourId → Add review (User only)
-
 ---
 
 ### 🛠️ TECHNOLOGIES USED
