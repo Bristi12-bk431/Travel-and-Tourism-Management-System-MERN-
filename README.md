@@ -30,6 +30,8 @@ Users can explore destinations, check prices, make bookings, and share reviews â
 | Page | Preview |
 |------|----------|
 | **Home Page** | ![Home](assets/screenshots/home.png) |
+| **About Page** | ![Tour Details](assets/screenshots/tour-details.png) |
+| **All Tour Page** | ![Tour Details](assets/screenshots/tour-details.png) |
 | **Tour Details Page** | ![Tour Details](assets/screenshots/tour-details.png) |
 | **Booking Page** | ![Booking](assets/screenshots/booking.png) |
 | **Login / Register** | ![Auth](assets/screenshots/auth.png) |
