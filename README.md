@@ -1,4 +1,4 @@
-# 🧭 TRAVEL AND TOURISM MANAGEMENT SYSTEM  
+# TRAVEL AND TOURISM MANAGEMENT SYSTEM  
 
 A **MERN stack web application** that simplifies travel planning and booking.  
 Users can explore destinations, check prices, make bookings, and share reviews — all within one seamless, interactive platform.  
@@ -17,26 +17,6 @@ Users can explore destinations, check prices, make bookings, and share reviews �
 - **Tour Management:** Create, update, and delete tour packages.  
 - **User Management:** View and control user accounts.  
 - **Booking Overview:** View all booking data in one place.    
-
----
-
-### PROJECT DEMO  
-
-#### LIVE DEMO  
- - add deploy link
-
-#### Screen Recordings  
-
-| Page | Preview |
-|------|----------|
-| **Home Page** | ![Home](assets/screenshots/home.png) |
-| **About Page** | ![Tour Details](assets/screenshots/tour-details.png) |
-| **All Tour Page** | ![Tour Details](assets/screenshots/tour-details.png) |
-| **Tour Details Page** | ![Tour Details](assets/screenshots/tour-details.png) |
-| **Booking Page** | ![Booking](assets/screenshots/booking.png) |
-| **Login / Register** | ![Auth](assets/screenshots/auth.png) |
-
-*(Store screenshots in `/assets/screenshots/` folder for GitHub preview)*  
 
 ---
 
