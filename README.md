@@ -94,7 +94,7 @@ Then visit -> http://localhost:3000
 
 ## CONTRIBUTORS
 
-- **Ayushi Maity ()** – Frontend Developer
-- **Anandi Debnath ()** – Frontend Developer
+- **Ayushi Maity (https://github.com/Ayushi1703638)** – Frontend Developer
+- **Anandi Debnath (https://github.com/an123-12)** – Frontend Developer
 - **Koushiki Chakraborty (https://github.com/Koushiki-Chakraborty)** – API Integration / API Developer and Backend Developer
-- **Bristi Kundu ()** – Backend Integration Engineer
+- **Bristi Kundu (https://github.com/Bristi12-bk431)** – Backend Integration Engineer
