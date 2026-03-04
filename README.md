@@ -96,5 +96,5 @@ Then visit -> http://localhost:3000
 
 - **Ayushi Maity (https://github.com/Ayushi1703638)** – Frontend Developer
 - **Anandi Debnath (https://github.com/an123-12)** – Frontend Developer
-- **Koushiki Chakraborty (https://github.com/Koushiki-Chakraborty)** – API Integration / API Developer and Backend Developer
+- **Koushiki Chakraborty (https://github.com/Koushiki-Chakraborty)** – API Integration / API Developer and Backend Developer & Team Lead
 - **Bristi Kundu (https://github.com/Bristi12-bk431)** – Backend Integration Engineer
