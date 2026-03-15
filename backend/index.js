@@ -34,6 +34,10 @@ mongoose.set("strictQuery", false);
 app.use(express.json());
 app.use(cors(corsOptions));
 app.use(cookieParser());
+// test route
+app.get("/", (req, res) => {
+  res.send("Travel Tourism API is running 🚀");
+});
 app.use("/api/v1/auth", authRoute);
 app.use("/api/v1/tours", tourRoute);
 app.use("/api/v1/users", userRoute);
