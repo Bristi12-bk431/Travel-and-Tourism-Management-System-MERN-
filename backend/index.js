@@ -20,12 +20,13 @@ const corsOptions = {
 
 //database connection
 mongoose.set("strictQuery", false);
-const connect = async () => {
+ const connect = async () => {
   try {
     await mongoose.connect(process.env.MONGO_URI);
     console.log("MongoDB database connected");
   } catch (err) {
     console.log("MongoDB database connection failed");
+    console.log(err);   // <-- THIS LINE WILL SHOW THE REAL ERROR
   }
 };
 
